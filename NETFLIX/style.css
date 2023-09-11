@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #000;
+    color: #ffffff;
+}
+                    
+                /*HEAD  Header */
+.header{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url(images/main.jpg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 9px 7%;
+    position: relative;
+    border-bottom: 10px solid #31343b;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.netflix-logo{
+    width: 20rem;
+    cursor: pointer;
+}
+
+#signin {
+    padding: 1.3rem 2.7rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    background-color: #db0001;
+    color: #fff;
+    transition: all .44s ease;
+}
+
+#signin:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+
+.header-content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% ,-40%);
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 6.4rem;
+    word-spacing: 2rem;
+    text-align: center;
+}
+
+.header-content h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.header-content p{
+    font-size: 1.5rem;
+}
+
+.signup{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    transition: all .45s ease;
+}
+
+
+
+.signup .email-box{
+    border: 0;
+    outline: 0;
+    width: 40rem;
+    height: 6rem;
+    margin-right: 1rem;
+    border-radius: 3px;
+    padding-left: 15px;
+    background: rgba(44, 43, 43, 0.6) ;
+    font-size: 14px;
+    color: white;
+}
+
+.signup .email-box:focus{
+    border: 3px solid red;
+}
+
+.signup button{
+    background-color: #db0001;
+    padding: 2.5rem 3rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    transition: all .43s ease;
+}
+
+.signup button:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 1px solid white;
+}
+
+
+                    /* head- FEATURES */
+
+.features{
+    padding: 50px 10%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 50px;
+    /* border-bottom: 10px solid #31343b; */
+}
+
+.row h2{
+    font-size: 5rem;   
+}
+
+.row p{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+                        /* head- F A Q */
+
+.faq{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2rem;
+    width: 100%;
+    max-width: 70vw;
+
+}
+
+.faq li{
+    list-style-type: none;
+    padding: 5px;
+    /* width: 670vw; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.faq li input[type="radio"]{
+    display: none;
+}
+
+.faq li label{
+    background-color: #303030;
+    padding: 20px 20px;
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.faq-content{
+    background-color: #3a3939;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s , padding .5s;
+}
+
+.faq li label::after{
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+    content: "+";
+    transform: transform .3s;
+}
+
+.list input[type="radio"]:checked + label + .faq-content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.list input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+                /* head>  Footer */
+
+.fotter{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotter ul{
+    list-style-type: none;
+}
+.fotter ul li{
+    text-decoration: underline;
+    line-height: 30px;
+    font-size: 1.67rem;
+}
+
+.lang{
+    text-align: center;
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.78rem;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.futt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tiq h4{
+    font-size: medium;
+    margin-right: 7px;
+}
+
+#lung .lang{
+    margin-left: 10px;
+}
+
+
+
+                    /* head>  MEDIA QUERRY */
+
+@media only screen and (max-width:1520px){
+    .row{
+        width: 100%
+    }
+    .feautre-img img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    html{
+        font-size: 53%;
+    }
+    .features{
+        padding: 50px 6%;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0px;
+        text-align: center;
+}
+.features{
+    padding: 50px 6%;
+}
+}
+
+@media only screen and (max-width:550px){
+
+    .features{
+        padding: 50px 6%;
+    }
+    .header-content h1{
+        font-size: 6rem;
+        word-spacing: 1.7rem;
+        text-align: center;
+    }
+    
+    .header-content h4{
+        font-size: 2.1rem;
+        font-weight: 400;
+        margin-bottom: 1.7rem;
+    }
+    
+    .header-content p{
+        font-size: 1.24rem;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    html{
+        font-size: 40%;
+    }
+
+    .features{
+        padding: 50px 3%;
+    }
+}
